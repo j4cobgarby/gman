@@ -6,6 +6,10 @@
   font-family: 'Montserrat';
 }
 
+*:focus {
+  outline: none;
+}
+
 html, body {
   background-color: #FF6B6C;
 }
@@ -45,6 +49,11 @@ div.input {
   padding: 30px 60px;
   box-sizing: border-box;
 
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
   label {
     border: none;
     height: 100%;
@@ -53,6 +62,7 @@ div.input {
     font-size: 40px;
     font-weight: bold;
     margin: 0 20px;
+    user-select: none;
   }
 
   input[type="text"] {
@@ -61,7 +71,8 @@ div.input {
     width: 850px;
     padding: 0 40px;
     box-sizing: border-box;
-    color: #5B5F97;
+    background-color: #4d5185;
+    color: white;
     font-size: 40px;
     border-radius: 15px;
     font-weight: bold;
@@ -82,7 +93,7 @@ div.input {
     float: right;
     color: white;
     font-weight: bold;
-    transition-duration: 0.1s;
+    transition: background-color 0.1s;
 
     &:hover {
       background-color: #4d5185;
@@ -94,5 +105,5 @@ div.input {
 div.result {
   background-color: #AFD2E9;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
 }

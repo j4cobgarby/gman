@@ -3,6 +3,9 @@
   padding: 0;
   font-family: 'Montserrat';
 }
+*:focus {
+  outline: none;
+}
 html,
 body {
   background-color: #FF6B6C;
@@ -43,6 +46,10 @@ div.input {
   padding: 30px 60px;
   box-sizing: border-box;
 }
+div.input form {
+  width: 100%;
+  height: 100%;
+}
 div.input label {
   border: none;
   height: 100%;
@@ -51,6 +58,7 @@ div.input label {
   font-size: 40px;
   font-weight: bold;
   margin: 0 20px;
+  user-select: none;
 }
 div.input input[type="text"] {
   border: none;
@@ -58,7 +66,8 @@ div.input input[type="text"] {
   width: 850px;
   padding: 0 40px;
   box-sizing: border-box;
-  color: #5B5F97;
+  background-color: #4d5185;
+  color: white;
   font-size: 40px;
   border-radius: 15px;
   font-weight: bold;
@@ -77,7 +86,7 @@ div.input input[type="submit"] {
   float: right;
   color: white;
   font-weight: bold;
-  transition-duration: 0.1s;
+  transition: background-color 0.1s;
 }
 div.input input[type="submit"]:hover {
   background-color: #4d5185;
@@ -86,5 +95,5 @@ div.input input[type="submit"]:hover {
 div.result {
   background-color: #AFD2E9;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
 }
