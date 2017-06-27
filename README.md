@@ -7,7 +7,7 @@ reading your README as you've never experienced it before!
 
 ### Still not convinced? Just read a few of the many positive reviews:
 
-**Bob:** This is the most pointless website I've ever seen. Why can't I just read my README on GitHu- _Wha.. is that a gun?_
+~~~**Bob:** This is the most pointless website I've ever seen. Why can't I just read my README on GitHu- _Wha.. is that a gun?_~~~
 
 . . .
 
