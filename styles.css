@@ -63,7 +63,7 @@ div.input label {
 div.input input[type="text"] {
   border: none;
   height: 100%;
-  width: 400px;
+  max-width: 400px;
   padding: 0 40px;
   box-sizing: border-box;
   background-color: #4d5185;
@@ -114,4 +114,7 @@ div.result div.inner * {
 }
 div.result div.inner h1.filename {
   font-size: 40px;
+}
+div.result div.inner div.file pre {
+  white-space: pre-wrap;
 }
