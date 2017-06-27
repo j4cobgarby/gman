@@ -46,17 +46,17 @@ div.input {
 div.input label {
   border: none;
   height: 100%;
-  padding: 0 30px;
   box-sizing: border-box;
   color: white;
   font-size: 40px;
   font-weight: bold;
+  margin: 0 20px;
 }
 div.input input[type="text"] {
   border: none;
   height: 100%;
   width: 850px;
-  padding: 0 80px;
+  padding: 0 40px;
   box-sizing: border-box;
   color: #5B5F97;
   font-size: 40px;
@@ -69,8 +69,7 @@ div.input input[type="text"]::placeholder {
 div.input input[type="submit"] {
   border: none;
   height: 100%;
-  width: 20%;
-  padding: 0 80px;
+  padding: 0 40px;
   box-sizing: border-box;
   background-color: #5B5F97;
   font-size: 45px;
@@ -78,6 +77,7 @@ div.input input[type="submit"] {
   float: right;
   color: white;
   font-weight: bold;
+  transition-duration: 0.1s;
 }
 div.input input[type="submit"]:hover {
   background-color: #4d5185;
