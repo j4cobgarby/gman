@@ -14,12 +14,12 @@
     <div class="input">
       <form action="" method="post">
         <label>github.com/</label>
-        <input spellcheck=false type="text" placeholder="username/repo">
+        <input name="path" spellcheck=false type="text" placeholder="username/repo">
         <input type="submit" value="Go!">
       </form>
     </div>
     <div class="result">
-
+      
     </div>
   </body>
 </html>
