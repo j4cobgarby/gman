@@ -5,6 +5,8 @@
 Well no, you probably haven't. But **now you can!** Just pop in your organization and repository, and before you know it you'll be
 reading your README as you've never experienced it before!
 
+---
+
 ### Still not convinced? Just read a few of the many positive reviews:
 
 ~~~**Bob:** This is the most pointless website I've ever seen. Why can't I just read my README on GitHu- _Wha.. is that a gun?_~~~
