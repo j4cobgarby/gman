@@ -10,22 +10,22 @@ html,
 body {
   background-color: #FF6B6C;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title {
   user-select: none;
 }
-h1 {
+h1.title {
   font-family: 'Montserrat';
   text-align: center;
   font-size: 100px;
   color: #FFFFFB;
   height: 100px;
 }
-h4 {
+h4.subtitle {
   font-family: 'Montserrat';
   text-align: center;
   font-size: 30px;
@@ -63,7 +63,7 @@ div.input label {
 div.input input[type="text"] {
   border: none;
   height: 100%;
-  width: 850px;
+  width: 400px;
   padding: 0 40px;
   box-sizing: border-box;
   background-color: #4d5185;
@@ -71,6 +71,7 @@ div.input input[type="text"] {
   font-size: 40px;
   border-radius: 15px;
   font-weight: bold;
+  margin-right: 20px;
 }
 div.input input[type="text"]::placeholder {
   color: #e4e5f4;
@@ -96,4 +97,21 @@ div.result {
   background-color: #AFD2E9;
   width: 100%;
   min-height: 300px;
+  padding: 80px;
+  box-sizing: border-box;
+}
+div.result div.inner {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+div.result div.inner * {
+  color: #323232;
+  font-family: 'Fira Mono';
+  text-align: left;
+}
+div.result div.inner h1.filename {
+  font-size: 40px;
 }
