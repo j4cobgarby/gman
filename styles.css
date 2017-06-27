@@ -102,9 +102,10 @@ div.result {
 }
 div.result div.inner {
   background-color: white;
-  width: 100%;
   border-radius: 20px;
   padding: 30px 50px;
+  margin: auto;
+  width: 1000px;
   box-sizing: border-box;
 }
 div.result div.inner * {
@@ -115,6 +116,30 @@ div.result div.inner * {
 div.result div.inner h1.filename {
   font-size: 40px;
 }
-div.result div.inner div.file pre {
-  white-space: pre-wrap;
+div.result div.inner div.file {
+  padding: 30px 0;
+  line-height: 30px;
+}
+div.result div.inner div.file h1,
+div.result div.inner div.file h2,
+div.result div.inner div.file h3,
+div.result div.inner div.file h4,
+div.result div.inner div.file h5,
+div.result div.inner div.file h6 {
+  padding: 20px 0 30px 0;
+}
+div.result div.inner div.file table {
+  border: 1px solid #b8b8b8;
+  border-spacing: 0px;
+}
+div.result div.inner div.file th {
+  background-color: #dbdbdb;
+}
+div.result div.inner div.file th,
+div.result div.inner div.file td {
+  border: 1px solid #b8b8b8;
+  padding: 10px 15px;
+}
+div.result div.inner div.file tbody tr:nth-child(even) {
+  background-color: #dbdbdb;
 }

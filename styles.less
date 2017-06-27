@@ -112,9 +112,10 @@ div.result {
 
   div.inner {
     background-color: white;
-    width: 100%;
     border-radius: 20px;
     padding: 30px 50px;
+    margin: auto;
+    width: 1000px;
     box-sizing: border-box;
 
     * {
@@ -128,8 +129,29 @@ div.result {
     }
 
     div.file {
-      pre {
-        white-space: pre-wrap;
+      padding: 30px 0;
+      line-height: 30px;
+
+      h1, h2, h3, h4, h5, h6 {
+        padding: 20px 0 30px 0;
+      }
+
+      table {
+        border: 1px solid #b8b8b8;
+        border-spacing: 0px;
+      }
+
+      th {
+        background-color: #dbdbdb;
+      }
+
+      th, td {
+        border: 1px solid #b8b8b8;
+        padding: 10px 15px;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #dbdbdb;
       }
     }
   }

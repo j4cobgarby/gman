@@ -64,20 +64,28 @@
     <div class="result">
       <div class="inner">
         <div class="file">
-          <pre>
 <?php
   if (!isset($_GET["username"]) || !isset($_GET["repo"])) {
-    echo "You haven't specified a repo yet.";
+    $readmeURL = getReadmeName('j4cobgarby', 'gman');
+    $Parsedown = new Parsedown();
+    echo $Parsedown->text(getSource($readmeURL));
+    if ($readmeURL === 0) {
+      echo "README not found.";
+    }
   } else {
     $readmeURL = getReadmeName($_GET["username"], $_GET["repo"]);
     $Parsedown = new Parsedown();
     echo $Parsedown->text(getSource($readmeURL));
-    if ($readmeURL == 0) {
-      echo "README not found.";
+    if ($readmeURL === 0) {
+      $readmeURL = getReadmeName('j4cobgarby', 'gman');
+      $Parsedown = new Parsedown();
+      echo $Parsedown->text(getSource($readmeURL));
+      if ($readmeURL === 0) {
+        echo "README not found.";
+      }
     }
   }
 ?>
-          </pre>
         </div>
       </div>
     </div>
