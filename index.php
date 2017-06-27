@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:400,500" rel="stylesheet">
     <?php
+      require 'Parsedown.php';
+
       $readmes = array('README.md', 'README.txt', 'README');
 
       function URLExists($url) {
@@ -68,7 +70,8 @@
     echo "You haven't specified a repo yet.";
   } else {
     $readmeURL = getReadmeName($_GET["username"], $_GET["repo"]);
-    echo getSource($readmeURL);
+    $Parsedown = new Parsedown();
+    echo $Parsedown->text(getSource($readmeURL));
     if ($readmeURL == 0) {
       echo "README not found.";
     }
